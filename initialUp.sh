@@ -6,24 +6,12 @@ sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install clang gcc git python ruby zsh tree cowsay htop valgrind -y
 # change shell to zsh
 sudo ex /etc/passwd <<EOEX
-  :%s/bash/bash/g
+  :%s/bash/zsh/g
   :wq!
 EOEX
 # retrieve my .zshrc file and .gitconfig files
 wget https://raw.githubusercontent.com/jonrellsworth/ubuntu-config/master/.gitconfig
 wget https://raw.githubusercontent.com/jonrellsworth/ubuntu-config/master/.zshrc
-# change permissions, source .zshrc, and enter shell
-chmod 764 .zshrc
-source ./.zshrc
-chmod 664 .zshrc 
-zsh
-# prezto: http://wikimatze.de/better-zsh-with-prezto
-git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
-setopt EXTENDED_GLOB
-for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
-ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
-done
-
 # vim with lua
 # https://gist.githubusercontent.com/hillwah/68f0f0a7c6b73f61bb4884673a70b9a7/raw/872ca6ce0e0d3097a0f27932aaaf97eb7530ee91/vim74_lua
 sudo apt-get remove --purge vim vim-runtime vim-gnome vim-tiny vim-common vim-gui-common -y
@@ -63,3 +51,7 @@ sudo make install
 
 # http://vim.spf13.com/#vimrc
 curl http://j.mp/spf13-vim3 -L -o - | sh
+
+# exit then re-enter and run zpreztoInstall.sh
+exit
+
