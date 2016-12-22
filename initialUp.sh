@@ -6,12 +6,17 @@ sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install clang gcc git python ruby zsh tree cowsay htop valgrind -y
 # change shell to zsh
 sudo ex /etc/passwd <<EOEX
-  :%s/bash/zsh/g
+  :%s/bash/bash/g
   :wq!
 EOEX
 # retrieve my .zshrc file and .gitconfig files
 wget https://raw.githubusercontent.com/jonrellsworth/ubuntu-config/master/.gitconfig
-wget https://github.com/jonrellsworth/ubuntu-config/blob/master/.zshrc
+wget https://raw.githubusercontent.com/jonrellsworth/ubuntu-config/master/.zshrc
+# change permissions, source .zshrc, and enter shell
+chmod 764 .zshrc
+source ./.zshrc
+chmod 664 .zshrc 
+zsh
 # prezto: http://wikimatze.de/better-zsh-with-prezto
 git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
 setopt EXTENDED_GLOB
