@@ -5,7 +5,10 @@ sudo apt-get update && sudo apt-get upgrade -y
 # install necessary packages
 sudo apt-get install clang gcc git python ruby zsh tree cowsay htop valgrind -y
 # change shell to zsh
-chsh -s $(which zsh)
+sudo ex /etc/passwd <<EOEX
+  :%s/bash/zsh/g
+  :wq!
+EOEX
 # retrieve my .zshrc file and .gitconfig files
 wget https://raw.githubusercontent.com/jonrellsworth/ubuntu-config/master/.gitconfig
 wget https://github.com/jonrellsworth/ubuntu-config/blob/master/.zshrc
