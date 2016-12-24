@@ -3,12 +3,14 @@
 # update and upgrade
 sudo apt-get update && sudo apt-get upgrade -y
 # install necessary packages
-sudo apt-get install clang gcc git python ruby zsh tree cowsay htop valgrind -y
+sudo apt-get install clang gcc git python ruby zsh tree cowsay htop valgrind gdb -y
 # change shell to zsh
 sudo ex /etc/passwd <<EOEX
   :%s/bash/zsh/g
   :wq!
 EOEX
+# generate ssh keys
+echo | ssh-keygen -t rsa -P ''
 # retrieve my .zshrc file and .gitconfig files
 wget https://raw.githubusercontent.com/jonrellsworth/ubuntu-config/master/.gitconfig
 wget https://raw.githubusercontent.com/jonrellsworth/ubuntu-config/master/.zshrc
@@ -51,7 +53,13 @@ sudo make install
 
 # http://vim.spf13.com/#vimrc
 curl http://j.mp/spf13-vim3 -L -o - | sh
+# clone gdbinit file
+wget https://raw.githubusercontent.com/cyrus-and/gdb-dashboard/master/.gdbinit
+
 
 # exit then re-enter and run zpreztoInstall.sh
 exit
+exit
 
+# cleanup of home directory
+#    removal of unnecessary files

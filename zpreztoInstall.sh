@@ -7,10 +7,12 @@ for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
     ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
 done
 
-# change prezto theme
-ex .zpreztorc <<EOEX
-    :%s/theme 'sorin'/theme 'agnoster'/g
-    :wq
-EOEX
+# wget prezto files
+cd .zprezto/runcoms/
+wget -O 
 
+# need to add prompts to change the command line prompt
+# need to add in zsh changes like clobber
+
+exit
 exit
