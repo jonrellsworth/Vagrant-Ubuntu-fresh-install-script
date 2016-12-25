@@ -3,7 +3,7 @@
 # update and upgrade
 sudo apt-get update && sudo apt-get upgrade -y
 # install necessary packages
-sudo apt-get install clang gcc git python ruby zsh tree cowsay htop valgrind gdb -y
+sudo apt-get install clang gcc git python ruby zsh tree cowsay htop valgrind gdb fortune -y
 # change shell to zsh
 sudo ex /etc/passwd <<EOEX
   :%s/bash/zsh/g
@@ -29,8 +29,6 @@ sudo rm /usr/bin/vim
 sudo mkdir /usr/include/lua5.1/include
 sudo mv /usr/include/lua5.1/*.h /usr/include/lua5.1/include/
  
-sudo ln -s /usr/bin/luajit-2.0.4 /usr/bin/luajit
- 
 cd ~
 git clone https://github.com/vim/vim
 cd vim/src
@@ -52,14 +50,16 @@ make
 sudo make install
 
 # http://vim.spf13.com/#vimrc
+cd
 curl http://j.mp/spf13-vim3 -L -o - | sh
+# edit .vimrc to enable linewrap
+echo "set wrap\nset linebreak\nset nolist\nset textwidth=0\nset wrapmargin=0" >> .vimrc.local
 # clone gdbinit file
 wget https://raw.githubusercontent.com/cyrus-and/gdb-dashboard/master/.gdbinit
-
+# cleanup
+rm -rf .bash* 
 
 # exit then re-enter and run zpreztoInstall.sh
-exit
-exit
 
 # cleanup of home directory
 #    removal of unnecessary files
