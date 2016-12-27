@@ -23,30 +23,32 @@ What's Included?
     - [spf13's ultimate vim distribution] (http://vim.spf13.com/)
 - [zsh] (http://www.zsh.org/)
     - with [zprezto] (https://github.com/sorin-ionescu/prezto)
-    - .zshrc 
-    - .zpreztorc
-    - .zprofile
-    - .zlogin
+    - [.zshrc] (https://github.com/jonrellsworth/ubuntu-config/blob/master/.zshrc)
+    - [.zpreztorc] (https://github.com/jonrellsworth/Vagrant-Ubuntu-fresh-install-script/blob/master/prezto/zpreztorc)
+    - [.zprofile] (https://github.com/jonrellsworth/Vagrant-Ubuntu-fresh-install-script/blob/master/prezto/zprofile)
+    - [.zlogin] (https://github.com/jonrellsworth/Vagrant-Ubuntu-fresh-install-script/blob/master/prezto/zlogin)
 
 Usage
 -----
 
-    1. wget into home directory of virtual machine:
+1. wget into home directory of virtual machine:
 
-        `wget https://raw.githubusercontent.com/jonrellsworth/Vagrant-Ubuntu-fresh-install-script/master/initialUp.sh`
-        `wget https://raw.githubusercontent.com/jonrellsworth/Vagrant-Ubuntu-fresh-install-script/master/zpreztoInstall.sh`
-    
-    2. Add or remove whatever programs you want before running:
+```bash
+wget https://raw.githubusercontent.com/jonrellsworth/Vagrant-Ubuntu-fresh-install-script/master/initialUp.sh
+wget https://raw.githubusercontent.com/jonrellsworth/Vagrant-Ubuntu-fresh-install-script/master/zpreztoInstall.sh
+```
 
-    3. Run the initialUp.sh script first:
+2. Add or remove whatever programs you want before running:
 
-        `./initialUp.sh`
-        
-    4. Logout and login again:
+3. Run the initialUp.sh script first:
 
-    5. Run zpreztoInstall.sh if you want zprezto on your machine: 
+`./initialUp.sh`
 
-        `./zpreztoInstall.sh`
+4. Logout and login again:
+
+5. Run zpreztoInstall.sh if you want zprezto on your machine: 
+
+`./zpreztoInstall.sh`
 
 ### Prompt not displaying correctly?
 
