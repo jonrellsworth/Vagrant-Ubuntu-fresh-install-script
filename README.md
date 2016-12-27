@@ -1,8 +1,10 @@
-# Vagrant Ubuntu fresh install script
+Vagrant Ubuntu fresh install script
+===================================
 
 These scripts are to automate the setup of command line tools in Vagrant machines.
 
-## What's Included? ##
+What's Included? 
+----------------
 
 - clang (http://clang.llvm.org/)
 - cowsay (https://en.wikipedia.org/wiki/Cowsay)
@@ -26,7 +28,8 @@ These scripts are to automate the setup of command line tools in Vagrant machine
     - .zprofile
     - .zlogin
 
-## Usage ##
+Usage
+-----
 
     1. wget into home directory of virtual machine:
 
@@ -35,23 +38,24 @@ These scripts are to automate the setup of command line tools in Vagrant machine
     
     2. Add or remove whatever programs you want before running:
 
-    3. Run the initialUp.sh script first.
+    3. Run the initialUp.sh script first:
 
         ./initialUp.sh
 
-    4. Logout and login again.
+    4. Logout and login again:
 
-    5. Run zpreztoInstall.sh if you want zprezto on your machine. 
+    5. Run zpreztoInstall.sh if you want zprezto on your machine: 
 
         ./zpreztoInstall.sh
 
-### Prompt not displaying correctly? ###
+### Prompt not displaying correctly?
 
 If the prompt isn't displaying correctly it's probably because you are not using a powerline compatible font. I like Inconsolata-dz for powerline. 
 
-    Find it here (https://github.com/powerline/fonts)
+- Find it here (https://github.com/powerline/fonts)
 
-## Tested on ##
+Tested on
+---------
 
 - Ubuntu 12.04 hashicorp/precise64 (https://atlas.hashicorp.com/hashicorp/boxes/precise64)
 - Ubuntu 16.04 ubuntu/xenial64 (https://atlas.hashicorp.com/ubuntu/boxes/xenial64)
