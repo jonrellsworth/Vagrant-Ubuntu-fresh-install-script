@@ -56,10 +56,5 @@ curl http://j.mp/spf13-vim3 -L -o - | sh
 echo "set wrap\nset linebreak\nset nolist\nset textwidth=0\nset wrapmargin=0" >> .vimrc.local
 # clone gdbinit file
 wget https://raw.githubusercontent.com/cyrus-and/gdb-dashboard/master/.gdbinit
-# cleanup
-rm -rf .bash* 
 
 # exit then re-enter and run zpreztoInstall.sh
-
-# cleanup of home directory
-#    removal of unnecessary files
