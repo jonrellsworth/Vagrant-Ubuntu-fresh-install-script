@@ -33,24 +33,24 @@ Usage
 
 1. wget into home directory of virtual machine:
 
-```bash
-wget https://raw.githubusercontent.com/jonrellsworth/Vagrant-Ubuntu-fresh-install-script/master/initialUp.sh
-wget https://raw.githubusercontent.com/jonrellsworth/Vagrant-Ubuntu-fresh-install-script/master/zpreztoInstall.sh
-```
+    ```bash
+    wget https://raw.githubusercontent.com/jonrellsworth/Vagrant-Ubuntu-fresh-install-script/master/initialUp.sh
+    wget https://raw.githubusercontent.com/jonrellsworth/Vagrant-Ubuntu-fresh-install-script/master/zpreztoInstall.sh
+    ```
 
 2. Make scripts executable:
 
-`chmod 700 initialUp.sh zpreztoInstall.sh`
+    `chmod 700 initialUp.sh zpreztoInstall.sh`
 
 3. Run the initialUp.sh script first:
 
-`./initialUp.sh`
+    `./initialUp.sh`
 
 4. Logout and login again:
 
 5. Run zpreztoInstall.sh if you want zprezto on your machine: 
 
-`./zpreztoInstall.sh`
+    `./zpreztoInstall.sh`
 
 ### Prompt not displaying correctly?
 
