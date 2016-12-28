@@ -1,8 +1,15 @@
 #!/bin/sh 
 
+# initialUp.sh
+# author: Jon Ellsworth <https://github.com/jonrellsworth>
+
 # update and upgrade
 sudo apt-get update && sudo apt-get upgrade -y
 # install necessary packages
+# 
+# make any necessary changes here to suit your own development environment
+# currently set up for development in C and C++
+#
 sudo apt-get install clang gcc git python ruby zsh tree cowsay htop valgrind gdb fortune -y
 # change shell to zsh
 sudo ex /etc/passwd <<EOEX
