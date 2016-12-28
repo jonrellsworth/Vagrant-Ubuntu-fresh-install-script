@@ -38,7 +38,9 @@ wget https://raw.githubusercontent.com/jonrellsworth/Vagrant-Ubuntu-fresh-instal
 wget https://raw.githubusercontent.com/jonrellsworth/Vagrant-Ubuntu-fresh-install-script/master/zpreztoInstall.sh
 ```
 
-2. Add or remove whatever programs you want before running:
+2. Make scripts executable:
+
+`chmod 700 initialUp.sh zpreztoInstall.sh`
 
 3. Run the initialUp.sh script first:
 
