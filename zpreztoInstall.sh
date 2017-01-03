@@ -15,5 +15,3 @@ cd .zprezto/runcoms/
 curl https://raw.githubusercontent.com/jonrellsworth/Vagrant-Ubuntu-fresh-install-script/master/prezto/zlogin >! zlogin
 curl https://raw.githubusercontent.com/jonrellsworth/Vagrant-Ubuntu-fresh-install-script/master/prezto/zpreztorc >! zpreztorc
 curl https://raw.githubusercontent.com/jonrellsworth/Vagrant-Ubuntu-fresh-install-script/master/prezto/zprofile >! zprofile
-
-# need to add prompts to change the command line prompt

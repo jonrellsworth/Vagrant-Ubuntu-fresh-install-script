@@ -62,3 +62,4 @@ Tested on
 - Ubuntu 14.04 [ubuntu/trusty14] (https://atlas.hashicorp.com/ubuntu/boxes/trusty64)
     - [puphpet/ubuntu1404-x64] (https://atlas.hashicorp.com/puphpet/boxes/ubuntu1404-x64)
 - Ubuntu 16.04 [ubuntu/xenial64] (https://atlas.hashicorp.com/ubuntu/boxes/xenial64)
+- Ubuntu 16.10 [boxcutter/ubuntu1610] (https://atlas.hashicorp.com/boxcutter/boxes/ubuntu1610)
