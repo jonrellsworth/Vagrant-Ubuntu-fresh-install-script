@@ -34,7 +34,7 @@ Usage
 1. wget into home directory of virtual machine:
 
     ```bash
-    wget https://raw.githubusercontent.com/jonrellsworth/Vagrant-Ubuntu-fresh-install-script/master/initialUp.sh && wget https://raw.githubusercontent.com/jonrellsworth/Vagrant-Ubuntu-fresh-install-script/master/zpreztoInstall.sh && chmod 700 initialUp.sh zpreztoInstall.sh
+    wget https://raw.githubusercontent.com/jonrellsworth/Vagrant-Ubuntu-fresh-install-script/master/initialUp.sh && wget https://raw.githubusercontent.com/jonrellsworth/Vagrant-Ubuntu-fresh-install-script/master/zpreztoInstall.sh && chmod +x initialUp.sh zpreztoInstall.sh
     ```
 
 2. Make any changes, additions, or deletions before running:
