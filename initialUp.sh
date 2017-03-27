@@ -10,7 +10,7 @@ sudo apt-get update && sudo apt-get upgrade -y
 # make any necessary changes here to suit your own development environment
 # currently set up for development in C and C++
 #
-sudo apt-get install clang gcc git python ruby zsh tree cowsay htop valgrind gdb fortune -y
+sudo apt-get install clang gcc git python python3 ruby zsh tree cowsay htop valgrind gdb fortune -y
 # change shell to zsh
 sudo ex /etc/passwd <<EOEX
   :%s/bash/zsh/g
