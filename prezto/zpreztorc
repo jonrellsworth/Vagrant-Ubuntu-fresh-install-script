@@ -33,6 +33,8 @@ zstyle ':prezto:load' pmodule \
   'utility' \
   'ssh' \
   'completion' \
+  'homebrew' \
+  'osx' \
   'git' \
   'syntax-highlighting' \
   'history-substring-search' \

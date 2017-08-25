@@ -5,6 +5,8 @@
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
+NOW="$(date +%s)"
+
 # Execute code that does not affect the current session in the background.
 {
   # Compile the completion dump to increase startup speed.
@@ -16,8 +18,16 @@
 
 # Print a random, hopefully interesting, adage.
 if (( $+commands[fortune] )); then
-  if [[ -t 0 || -t 1 ]]; then
-      cowsay $(fortune -a)
-    print
-  fi
+    if [[ -t 0 || -t 1 ]]; then
+        if [ $(( $NOW % 3 )) -eq 0 ]; then
+            fortune -a | cowsay -f head-in
+            print
+        elif [ $(( $NOW % 2 )) -eq 0 ]; then
+            cowsay $(fortune -a)
+            print
+        else 
+            fortune -a | cowsay -f tux
+            print
+        fi 
+    fi
 fi

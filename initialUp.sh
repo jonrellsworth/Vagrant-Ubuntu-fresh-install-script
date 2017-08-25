@@ -64,4 +64,7 @@ echo "set wrap\nset linebreak\nset nolist\nset textwidth=0\nset wrapmargin=0" >>
 # clone gdbinit file
 wget https://raw.githubusercontent.com/cyrus-and/gdb-dashboard/master/.gdbinit
 
+# remove bash files
+yes | rm .bash*
+
 # exit then re-enter and run zpreztoInstall.sh
